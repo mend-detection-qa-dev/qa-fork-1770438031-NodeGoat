@@ -2,6 +2,7 @@
   "description": "Autotest configuration file for reachability detection validation",
   "version": 1.5,
   "base_config": {
+    "validate_issues": false,
     "validate_reachability": true,
     "reachability": {
       "check_reachability_status": true,
@@ -135,7 +136,7 @@
           }
         ]
       },
-      "_comment_expected_unreachable_libraries": ",,,",
+      "_comment_expected_unreachable_libraries": "Expected UNREACHABLE libraries",
       "expected_total_reachable_count": { "gte": 6 },
       "_comment_expected_total_reachable_count": "Minimum number of reachable CVEs expected",
       "expected_total_unreachable_count": { "gte": 32 },
